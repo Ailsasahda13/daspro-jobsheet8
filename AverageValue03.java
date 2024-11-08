@@ -7,20 +7,9 @@ public class AverageValue03 {
         float nilai, totalNilai, rataNilai;
         int nilaiMhs;
 
-        System.out.println("Input Nilai Mahasiswa ke 1:  ");
-        System.out.print("Nilai ke -1:" + i + " = ");
-        nilai = sc.nextFloat();
-
-        for(j = 1; j <= 5; j++) {  
-        }
-            totalNilai=0;
-            for(j=1;j<=5;j++){
-                System.out.print("Nilai ke-" +j + " = ");
-                nilaiMhs = sc.nextInt();
-                totalNilai += nilaiMhs;
-
             i = 1;
             while (i <= 5) {
+                System.out.println("Input Nilai Mahasiswa ke " + i + "  ");
                 totalNilai = 0;
                 for (j = 1; j <= 5; j++) {
                     System.out.print("Nilai ke-" +j + " = ");
@@ -29,8 +18,9 @@ public class AverageValue03 {
             }
             rataNilai = totalNilai / 5;
             i++;
+            System.out.print("Rata-rata Nilai Mahasiswa adalah " + rataNilai );
+            System.out.println();
 
         }
     }
-}
 }
